@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Beginner Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">🐍 Python Tutorials</h1>
+                <p class="tagline">Learn Python from the beginning</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Welcome to Python Beginner Tutorials</h2>
+                <p>Start your journey into programming with easy-to-follow tutorials designed for beginners.</p>
+            </section>
+
+            <section class="tutorials">
+                <h2>Available Tutorials</h2>
+                <div class="tutorials-grid">
+                    
+                        <article class="tutorial-card">
+                            <h3>Getting Started with Python</h3>
+                            <p class="description">Learn the basics of Python programming</p>
+                            <a href="tutorial-1. html" class="btn btn-primary">Read Tutorial</a>
+                        </article>
+                    
+                        <article class="tutorial-card">
+                            <h3>Variables and Data Types</h3>
+                            <p class="description">Understanding variables and basic data types in Python</p>
+                            <a href="tutorial-2. html" class="btn btn-primary">Read Tutorial</a>
+                        </article>
+                    
+                        <article class="tutorial-card">
+                            <h3>If Statements</h3>
+                            <p class="description">Making decisions in your code</p>
+                            <a href="tutorial-3. html" class="btn btn-primary">Read Tutorial</a>
+                        </article>
+                    
+                        <article class="tutorial-card">
+                            <h3>Loops</h3>
+                            <p class="description">Repeating code with loops</p>
+                            <a href="tutorial-4. html" class="btn btn-primary">Read Tutorial</a>
+                        </article>
+                    
+                        <article class="tutorial-card">
+                            <h3>Functions</h3>
+                            <p class="description">Organizing code with functions</p>
+                            <a href="tutorial-5. html" class="btn btn-primary">Read Tutorial</a>
+                        </article>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Python Tutorials. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

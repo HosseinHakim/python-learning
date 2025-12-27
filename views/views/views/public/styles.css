@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height:  1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+  background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+. navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+.navbar . container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+. logo {
+  font-size:  28px;
+  font-weight:  bold;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background: white;
+  padding: 60px 20px;
+  text-align:  center;
+  margin:  30px 0;
+  border-radius: 8px;
+  box-shadow:  0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 36px;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Tutorials Section */
+.tutorials {
+  margin: 40px 0;
+}
+
+. tutorials h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.tutorial-card {
+  background: white;
+  padding: 25px;
+  border-radius:  8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-card h3 {
+  color: #667eea;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tutorial-card . description {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Tutorial Content */
+.tutorial-content {
+  background: white;
+  padding: 40px;
+  border-radius:  8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin:  30px 0;
+}
+
+. tutorial-content h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.tutorial-content h3 {
+  color: #764ba2;
+  margin-top: 25px;
+  margin-bottom:  15px;
+  font-size: 22px;
+}
+
+.tutorial-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.tutorial-content pre {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x:  auto;
+  margin: 15px 0;
+  border-left: 4px solid #667eea;
+}
+
+.tutorial-content code {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+. tutorial-content ul,
+.tutorial-content ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.tutorial-content li {
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+/* Tutorial Navigation */
+.tutorial-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top:  2px solid #f0f0f0;
+}
+
+/* Error Page */
+.error-page {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-page h2 {
+  color: #e74c3c;
+  font-size: 36px;
+  margin-bottom:  15px;
+}
+
+.error-page p {
+  color: #666;
+  margin-bottom:  25px;
+}
+
+/* Footer */
+footer {
+  background:  #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width:  768px) {
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-content {
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  . tutorial-nav {
+    flex-direction: column;
+    gap:  10px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
