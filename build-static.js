@@ -119,7 +119,7 @@ print(result)</code></pre>
 ];
 
 // Create dist folder
-const distDir = path.join(__dirname, 'dist');
+const distDir = path.join(__dirname, 'docs');  // Changed from 'dist';
 if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir);
 }
